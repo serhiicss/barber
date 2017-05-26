@@ -1,0 +1,59 @@
+html
+	font-size: 62.5%
+	line-height: 1.5
+
+	// @media only screen and (max-width: 460px)
+	// 	font-size: 1.8rem
+
+	// @media only screen and (max-width: 600px)
+	// 	font-size: 2rem
+
+body, input, select, textarea
+	color: $color-primary
+	font-family: $font-primary, sans-serif
+
+body 
+	background: #fff
+
+h1, h2, h3, h4
+	font-weight: bold
+	line-height: 1.25
+	margin: 1.75em 0 0.75em
+	color: $color-headings
+	font-family: $font-secondary, sans-serif
+
+	@media only screen and (min-width: 600px)
+		margin: 2em 0 1em
+
+h1
+	font-size: 2em
+	margin-top: 1em
+
+h2
+	font-size: 1.75em
+	margin-top: 1em
+
+
+/* When an h2 is directly after an h1 */
+
+h1 + h2
+	margin-top: 0.75em
+
+h3
+	font-size: 1.5em
+
+
+/* When an h2 is directly after an h1 */
+
+h3 + h4
+	margin-top: 0.75em
+
+p
+	font-size: 1.8rem
+	
+a, a:hover, a:focus, a:active
+	color: tomato
+	text-decoration: none
+
+em, i
+	font-style: italic
