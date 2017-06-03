@@ -3,7 +3,7 @@
 	font-size: 1.6rem
 	font-weight: bold
 	padding: 33px 0
-	@media(max-width: 1199px)
+	@media screen and (max-width: 1199px)
 		display: none
 .logo
 	color: $color-accent
@@ -25,18 +25,38 @@
 
 // Header hero
 .header-hero
+	position: relative
 	background-color: #818181
-	background-image: url(../img/header-bg.jpg)
+	background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/header-bg.jpg)
 	background-size: cover
-	// background-position: 100% 100%
-	height: 700px
-	
+	background-position: 60%
+	padding: 14% 0
+	@media screen and (min-width: 1199px)
+		background-image: url(../img/header-bg.jpg)
+
 // Header nav
-.header-nav
+.hamburger
+	position: absolute
+	top: 0
+	right: 0
+	outline: none
+	z-index: 999
+	.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after
+		background-color: $color-accent
+	@media screen and (min-width: 1199px)
+		display: none
+nav.header-nav
+	position: absolute
+	top: 0
+	right: 0
+	left: 0
 	background-color: rgba(0,0,0,.25)
 	font-size: 2rem
 	font-weight: bold
 	text-transform: uppercase
+	z-index: 1
+	@media screen and (max-width: 1199px)
+		background-color: $color-primary
 .header-nav ul
 	display: flex
 	flex-wrap: wrap
@@ -46,11 +66,20 @@
 	text-decoration: none
 	list-style-type: none
 	text-align: center
+	@media screen and (max-width: 1199px)
+		flex-direction: column
+		display: none
+		min-height: 100vh
+		height: 100%
+		margin-top: 60px
+@media screen and (max-width: 1199px)
+	.openme
+		display: block !important
 .header-nav li
 	flex: 1 0 auto
 .header-nav a
 	display: block
-	padding: 1.1em
+	padding: 1.1em 0
 	height: 100%
 	color: #fff
 	&:hover,
@@ -60,3 +89,16 @@
 		border-bottom: 3px solid $color-accent
 		margin-bottom: -3px //removes border jumping
 
+// Header cta
+.cta-wrapper
+	margin-left: 16%
+h1.cta-slogan
+	margin-bottom: 0.8em
+	color: #fff
+	font-size: calc(2.1vw + 1vh + .5vmin)
+	font-weight: bold
+	text-transform: uppercase
+	span
+		color: $color-accent
+	@media screen and (max-width: 650px)
+		font-size: 32px

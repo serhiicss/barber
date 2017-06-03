@@ -1,5 +1,6 @@
 $(document).ready(function() {
-
-	$('.popup-content').magnificPopup();
-
+	$(".hamburger").on("click", function(){
+		$(".hamburger").toggleClass("is-active");
+		$(".header-nav ul").toggleClass("openme");
+	})
 });

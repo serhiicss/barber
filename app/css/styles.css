@@ -2583,6 +2583,11 @@ img {
 .hidden {
   display: none; }
 
+header,
+section {
+  max-width: 1920px;
+  margin: 0 auto; }
+
 html {
   font-size: 62.5%;
   line-height: 1.5; }
@@ -2633,11 +2638,46 @@ a, a:hover, a:focus, a:active {
 em, i {
   font-style: italic; }
 
+.button {
+  position: relative;
+  display: inline-block;
+  max-width: 100%;
+  background-color: transparent;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  white-space: nowrap;
+  border: 2px solid #995437;
+  outline: none; }
+  .button:focus, .button:hover {
+    text-decoration: none;
+    color: #fff; }
+  .button:hover {
+    background-color: #ac5e3e;
+    border-color: #ac5e3e; }
+  .button:active {
+    background-color: #864a30;
+    border-color: #ac5e3e; }
+
+.btn-cta {
+  padding: .8em 1.5em;
+  font-size: 28px; }
+  @media screen and (max-width: 2000px) {
+    .btn-cta {
+      font-size: 24px; } }
+  @media screen and (max-width: 1700px) {
+    .btn-cta {
+      font-size: 16px; } }
+  @media screen and (max-width: 1024px) {
+    .btn-cta {
+      font-size: 12px; } }
+
 .top-header-info {
   font-size: 1.6rem;
   font-weight: bold;
   padding: 33px 0; }
-  @media (max-width: 1199px) {
+  @media screen and (max-width: 1199px) {
     .top-header-info {
       display: none; } }
 
@@ -2669,17 +2709,45 @@ em, i {
   font-size: 2.4rem; }
 
 .header-hero {
+  position: relative;
   background-color: #818181;
-  background-image: url(../img/header-bg.jpg);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(../img/header-bg.jpg);
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/header-bg.jpg);
+  background: -o-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/header-bg.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/header-bg.jpg);
   -webkit-background-size: cover;
           background-size: cover;
-  height: 700px; }
+  background-position: 60%;
+  padding: 14% 0; }
+  @media screen and (min-width: 1199px) {
+    .header-hero {
+      background-image: url(../img/header-bg.jpg); } }
 
-.header-nav {
+.hamburger {
+  position: absolute;
+  top: 0;
+  right: 0;
+  outline: none;
+  z-index: 999; }
+  .hamburger .hamburger-inner, .hamburger .hamburger-inner::before, .hamburger .hamburger-inner::after {
+    background-color: #995437; }
+  @media screen and (min-width: 1199px) {
+    .hamburger {
+      display: none; } }
+
+nav.header-nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
   background-color: rgba(0, 0, 0, 0.25);
   font-size: 2rem;
   font-weight: bold;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  z-index: 1; }
+  @media screen and (max-width: 1199px) {
+    nav.header-nav {
+      background-color: #3d3d3d; } }
 
 .header-nav ul {
   display: -webkit-box;
@@ -2697,6 +2765,21 @@ em, i {
   text-decoration: none;
   list-style-type: none;
   text-align: center; }
+  @media screen and (max-width: 1199px) {
+    .header-nav ul {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      display: none;
+      min-height: 100vh;
+      height: 100%;
+      margin-top: 60px; } }
+
+@media screen and (max-width: 1199px) {
+  .openme {
+    display: block !important; } }
 
 .header-nav li {
   -webkit-box-flex: 1;
@@ -2706,7 +2789,7 @@ em, i {
 
 .header-nav a {
   display: block;
-  padding: 1.1em;
+  padding: 1.1em 0;
   height: 100%;
   color: #fff; }
   .header-nav a:hover, .header-nav a:active {
@@ -2714,3 +2797,19 @@ em, i {
     background-color: rgba(153, 84, 55, 0.5);
     border-bottom: 3px solid #995437;
     margin-bottom: -3px; }
+
+.cta-wrapper {
+  margin-left: 16%; }
+
+h1.cta-slogan {
+  margin-bottom: 0.8em;
+  color: #fff;
+  font-size: -webkit-calc(2.1vw + 1vh + .5vmin);
+  font-size: calc(2.1vw + 1vh + .5vmin);
+  font-weight: bold;
+  text-transform: uppercase; }
+  h1.cta-slogan span {
+    color: #995437; }
+  @media screen and (max-width: 650px) {
+    h1.cta-slogan {
+      font-size: 32px; } }
