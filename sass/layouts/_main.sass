@@ -1,0 +1,63 @@
+.section-intro
+	margin: 0 auto
+	max-width: 40em
+	.intro-text
+		margin-top: 1em
+		font-size: 2rem
+
+.mustache
+	position: relative
+	display: block
+	margin: 5px auto 0
+	width: 68px
+	height: 18px
+	background-image: url(../img/mustache.png)
+	background-repeat: no-repeat
+	&::before,
+	&::after
+		content: ''
+		position: absolute
+		display: inline-block
+		height: 1px
+		width: 90px
+		background-color: $color-accent
+		top: 12px
+	&::before
+		margin-left: -150px
+	&::after
+		margin-left: 60px
+
+// ----------------------------
+// About us
+// ----------------------------
+.info-wrapper
+	margin-top: 8em
+	@media screen and (max-width: 550px)
+		margin-top: 6em
+.info-item-box
+	position: relative
+	margin-bottom: 0.1em
+	padding: 4em 1.2em
+	background-color: #d5d3d3
+	text-align: center
+	[class^="info-icon"]
+		position: absolute
+		margin-left: auto
+		margin-right: auto
+		top: -50px
+		left: 0
+		right: 0
+		display: inline-block
+		height: 102px
+		width: 102px
+	.info-icon-1
+		background-image: url(../img/info-1.png)
+	.info-icon-2
+		background-image: url(../img/info-2.png)
+	.info-icon-3
+		background-image: url(../img/info-3.png)		
+	.divider
+		display: inline-block
+		height: 2px
+		width: 8em
+		background-color: $color-accent
