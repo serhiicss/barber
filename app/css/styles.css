@@ -2583,6 +2583,9 @@ img {
 .hidden {
   display: none; }
 
+.align-right {
+  text-align: right; }
+
 header,
 section {
   max-width: 1920px;
@@ -2608,14 +2611,14 @@ body, input, select, textarea {
 body {
   background: #fff; }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
   line-height: 1.25;
   margin: 1.75em 0 0.75em;
   color: #212121;
   font-family: "Quattrocento", sans-serif; }
   @media only screen and (min-width: 600px) {
-    h1, h2, h3, h4 {
+    h1, h2, h3, h4, h5, h6 {
       margin: 2em 0 1em; } }
 
 h1 {
@@ -2634,6 +2637,9 @@ h1 + h2 {
 
 h3 {
   font-size: 2.2rem; }
+
+h4 {
+  font-size: 2rem; }
 
 /* When an h2 is directly after an h1 */
 h3 + h4 {
@@ -2880,3 +2886,40 @@ h1.cta-slogan {
     height: 2px;
     width: 8em;
     background-color: #995437; }
+
+.numbers {
+  padding: 2.2em 0 1.2em 0;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.88)), to(rgba(0, 0, 0, 0.88))), url(../img/numbers-bg.jpg);
+  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.88), rgba(0, 0, 0, 0.88)), url(../img/numbers-bg.jpg);
+  background-image: -o-linear-gradient(rgba(0, 0, 0, 0.88), rgba(0, 0, 0, 0.88)), url(../img/numbers-bg.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.88), rgba(0, 0, 0, 0.88)), url(../img/numbers-bg.jpg);
+  text-transform: uppercase; }
+
+.numbers-count {
+  font-family: "Quattrocento";
+  font-size: 6rem;
+  line-height: 1.1;
+  font-weight: bold;
+  color: #995437; }
+
+.numbers-text {
+  color: #fff;
+  font-size: 2rem; }
+  @media screen and (max-width: 767px) {
+    .numbers-text {
+      margin-bottom: 1em; } }
+
+.our-services {
+  -webkit-background-size: cover;
+          background-size: cover; }
+
+.service-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+[class^="service-icon"] {
+  width: 90px;
+  height: 90px;
+  background-image: url(../img/service-1.png); }

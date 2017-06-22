@@ -54,9 +54,44 @@
 	.info-icon-2
 		background-image: url(../img/info-2.png)
 	.info-icon-3
-		background-image: url(../img/info-3.png)		
+		background-image: url(../img/info-3.png)	
 	.divider
 		display: inline-block
 		height: 2px
 		width: 8em
 		background-color: $color-accent
+
+
+// ----------------------------
+// Numbers
+// ----------------------------
+.numbers
+	padding: 2.2em 0 1.2em 0
+	background-image: linear-gradient(rgba(0, 0, 0, 0.88), rgba(0, 0, 0, 0.88)), url(../img/numbers-bg.jpg)
+	text-transform: uppercase
+.numbers-count
+	font-family: $font-secondary
+	font-size: 6rem
+	line-height: 1.1
+	font-weight: bold
+	color: $color-accent
+.numbers-text
+	color: #fff
+	font-size: 2rem
+	@media screen and (max-width: 767px)
+		margin-bottom: 1em
+
+
+// ----------------------------
+// Our Services
+// ----------------------------
+.our-services
+	// background-image: url(../img/our-services-bg.jpg)
+	background-size: cover
+
+.service-wrapper
+	display: flex
+[class^="service-icon"]
+	width: 90px
+	height: 90px
+	background-image: url(../img/service-1.png)
