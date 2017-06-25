@@ -1,9 +1,10 @@
 .section-intro
-	margin: 0 auto
+	margin: 0 auto 5em auto
 	max-width: 40em
 	.intro-text
 		margin-top: 1em
 		font-size: 2rem
+		padding: 0 0.5em
 
 .mustache
 	position: relative
@@ -31,9 +32,9 @@
 // About us
 // ----------------------------
 .info-wrapper
-	margin-top: 8em
-	@media screen and (max-width: 550px)
-		margin-top: 6em
+	margin-top: 6em
+	@media screen and (min-width: 550px)
+		margin-top: 8em
 .info-item-box
 	position: relative
 	margin-bottom: 0.1em
@@ -86,12 +87,40 @@
 // Our Services
 // ----------------------------
 .our-services
-	// background-image: url(../img/our-services-bg.jpg)
-	background-size: cover
+	@media screen and (min-width: 1200px)
+		// padding-bottom: 20em
+		background: url(../img/our-services-bg-man.png), url(../img/our-services-bg.jpg)
+		background-repeat: no-repeat
+		background-size: cover
+		margin-bottom: 1em
+.our-services-wrapper
+	text-align: left
 
-.service-wrapper
-	display: flex
-[class^="service-icon"]
-	width: 90px
-	height: 90px
-	background-image: url(../img/service-1.png)
+@media screen and (min-width: 992px)
+	[class^="service-item"]
+		display: flex
+		justify-content: flex-end
+		.service-text
+			max-width: 25em
+	.service-item-right
+		text-align: right
+		justify-content: flex-start
+
+		[class^="service-icon"]
+			order: 2
+			margin-right: 0
+			margin-left: 1em
+	[class^="service-icon"]
+		align-self: center
+		width: 90px
+		height: 90px
+		margin-right: 1em
+	.service-icon
+		&-1
+			background-image: url(../img/service-1.png)		
+		&-2
+			background-image: url(../img/service-2.png)
+		&-3
+			background-image: url(../img/service-3.png)
+		&-4
+			background-image: url(../img/service-4.png)					
