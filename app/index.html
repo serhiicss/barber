@@ -214,13 +214,59 @@
 			</div><!-- container -->
 		</div><!-- our-services-wrapper -->
 
-	</section><!-- section-intro -->
+	</section><!-- our-services -->
+
+	<section class="appointment">
+
+		<div class="section-intro">
+			<h2>Make an appointment</h2>
+			<div class="mustache"></div>
+			<div class="intro-text">Please fill out the form below so we know you are coming and we can prepare ourselves. We might get spooked if you just walk in.</div>
+		</div>
+
+		<div class="appointment-wrapper">
+			<div class="container">
+				<div class="row">
+
+					<form action="validation_example.html" method="post">
+
+						<div class="col-md-6">
+							<input id="name" type="text" placeholder="Name" />
+
+							<input id="phone" type="text" placeholder="Phone" />
+
+							<input id="email" type="email" placeholder="E-mail" />
+						</div>
+
+						<div class="col-md-6">
+							<select name="service" id="service">
+								<option value="hair-cut">Hair Cut</option>
+								<option value="hair-wash">Hair Wash</option>
+								<option value="hair-styling">Hair Styling</option>
+								<option value="shave">Shave</option>
+							</select>
+
+							<select name="barber" id="barber">
+								<option value="dg">Darrell Gibbs</option>
+								<option value="dc">David Clarke</option>
+								<option value="ro">Richard Owens</option>
+							</select>
+						</div>
+
+						<input type="text" id="datepicker">
+
+						<input type="submit" value="Submit" />
+					</form>
+
+				</div><!-- row -->
+			</div><!-- container -->
+
+		</div><!-- appointment-wrapper -->
+
+	</section><!-- appointment -->
 
 	<link rel="stylesheet" href="css/styles.css">
-	<script
-	src="https://code.jquery.com/jquery-3.2.1.min.js"
-	integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-	crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 	<script src="js/main.js"></script>
 	
 </body>
