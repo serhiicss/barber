@@ -214,14 +214,73 @@
 			</div><!-- container -->
 		</div><!-- our-services-wrapper -->
 
-	</section><!-- section-intro -->
+	</section><!-- our-services -->
 
-	<link rel="stylesheet" href="css/styles.css">
-	<script
-	src="https://code.jquery.com/jquery-3.2.1.min.js"
-	integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-	crossorigin="anonymous"></script>
-	<script src="js/main.js"></script>
-	
-</body>
-</html>
+	<section class="appointment">
+
+		<div class="section-intro">
+			<h2>Make an appointment</h2>
+			<div class="mustache"></div>
+			<div class="intro-text">Please fill out the form below so we know you are coming and we can prepare ourselves. We might get spooked if you just walk in.</div>
+		</div>
+
+		<div class="appointment-wrapper">
+			<form action="validation_example.html" method="post">
+				<div class="container">
+					<div class="row">
+
+
+						<div class="col-md-6">
+							<input id="name" type="text" placeholder="Name" />
+
+							<input id="phone" type="text" placeholder="Phone" />
+
+							<input id="email" type="email" placeholder="E-mail" />
+						</div>
+
+						<div class="col-md-6">
+							<select name="service" id="service">
+								<option value="service" disabled selected>Service</option>
+								<option value="hair-cut">Hair Cut</option>
+								<option value="hair-wash">Hair Wash</option>
+								<option value="hair-styling">Hair Styling</option>
+								<option value="shave">Shave</option>
+							</select>
+
+							<select name="barber" id="barber">
+								<option value="barber" disabled selected>Barber</option>
+								<option value="dg">Darrell Gibbs</option>
+								<option value="dc">David Clarke</option>
+								<option value="ro">Richard Owens</option>
+							</select>
+
+							<input type="text" id="datepicker" class="datepicker" placeholder="Date">
+						</div>
+					</div><!-- row -->
+
+					<div class="row">
+						<div class="col-md-12">
+							<textarea type="text" name="message" placeholder="Message"></textarea>
+							<a class="button btn-cta">Make An Appointment<a/>
+							</div>
+						</div>
+
+					</form>
+				</div><!-- container -->
+
+			</div><!-- appointment-wrapper -->
+
+		</section><!-- appointment -->
+		
+		<link rel="stylesheet" href="">
+		<link rel="stylesheet" href="css/styles.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+		<script
+  src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+  integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+  crossorigin="anonymous"></script>
+		<script src="js/main.js"></script>
+
+	</body>
+	</html>
