@@ -1,8 +1,8 @@
 .section-intro
 	margin: 0 auto 5em auto
-	max-width: 40em
 	.intro-text
-		margin-top: 1em
+		max-width: 30em
+		margin: 1em auto 0
 		font-size: 2rem
 		padding: 0 0.5em
 
@@ -127,4 +127,37 @@
 		&-3
 			background-image: url(../img/service-3.png)
 		&-4
-			background-image: url(../img/service-4.png)					
+			background-image: url(../img/service-4.png)
+
+// ----------------------------
+// Appointment
+// ----------------------------		
+.appointment
+	background-image: linear-gradient(rgba(0, 0, 0, 0.9) 70%, rgba(0, 0, 0, 0.65)), url(../img/form-bg.jpg)
+	background-size: cover
+	color: $color-invert
+	h2
+		color: #fff
+	input,
+	select,
+	textarea
+		width: 100%
+		margin-bottom: 2em
+		font-size: calc(2rem + 0.1vw)
+		color: $color-form
+		background-color: transparent
+		border: 0
+		border-bottom: 1px solid $color-invert
+	textarea:focus,
+	input:focus,
+	select
+		outline: 0
+		cursor: pointer		
+	option
+		background-color: #000
+	textarea
+		height: 6em
+	.datepicker,
+	select
+		margin-top: 0.2em
+
