@@ -2912,14 +2912,23 @@ h1.cta-slogan {
 
 @media screen and (min-width: 1200px) {
   .our-services {
-    background: url(../img/our-services-bg-man.png), url(../img/our-services-bg.jpg);
-    background-repeat: no-repeat;
-    -webkit-background-size: cover;
-            background-size: cover;
-    margin-bottom: 1em; } }
+    background-color: orange;
+    background: url(../img/our-services-bg-man.png) bottom no-repeat, url(../img/our-services-bg.jpg) no-repeat;
+    -webkit-background-size: 400px, cover;
+            background-size: 400px, cover;
+    background-position: 52% 100%, center; } }
+
+@media screen and (min-width: 1360px) {
+  .our-services {
+    -webkit-background-size: 660px, cover;
+            background-size: 660px, cover;
+    padding-bottom: 30em; } }
 
 .our-services-wrapper {
   text-align: left; }
+  @media screen and (min-width: 1600px) {
+    .our-services-wrapper {
+      margin: 0 10em; } }
 
 @media screen and (min-width: 992px) {
   [class^="service-item"] {
