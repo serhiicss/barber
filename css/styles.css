@@ -3512,10 +3512,14 @@ section {
   padding-top: 8em;
   padding-bottom: 8em;
   text-align: center; }
-  @media only screen and (max-width: 1190px) {
+  @media only screen and (max-width: 1599px) {
     section {
       padding-top: 5em;
       padding-bottom: 5em; } }
+  @media only screen and (max-width: 425px) {
+    section {
+      padding-top: 3em;
+      padding-bottom: 3em; } }
 
 html {
   font-size: 62.5%;
@@ -3807,6 +3811,7 @@ h1.cta-slogan {
 
 .numbers {
   padding: 2.2em 0 1.2em 0;
+  background-color: #151515;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.88)), to(rgba(0, 0, 0, 0.88))), url(../img/numbers-bg.jpg);
   background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.88), rgba(0, 0, 0, 0.88)), url(../img/numbers-bg.jpg);
   background-image: -o-linear-gradient(rgba(0, 0, 0, 0.88), rgba(0, 0, 0, 0.88)), url(../img/numbers-bg.jpg);
@@ -3889,12 +3894,13 @@ h1.cta-slogan {
     background-image: url(../img/service-4.png); } }
 
 .appointment {
+  background-color: #151515;
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(70%, rgba(0, 0, 0, 0.9)), to(rgba(0, 0, 0, 0.65))), url(../img/form-bg.jpg);
   background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.9) 70%, rgba(0, 0, 0, 0.65)), url(../img/form-bg.jpg);
   background-image: -o-linear-gradient(rgba(0, 0, 0, 0.9) 70%, rgba(0, 0, 0, 0.65)), url(../img/form-bg.jpg);
   background-image: linear-gradient(rgba(0, 0, 0, 0.9) 70%, rgba(0, 0, 0, 0.65)), url(../img/form-bg.jpg);
-  -webkit-background-size: cover;
-          background-size: cover;
+  -webkit-background-size: fit fit;
+          background-size: fit;
   color: #c0c0c0; }
   .appointment h2 {
     color: #fff; }
@@ -3921,3 +3927,40 @@ h1.cta-slogan {
   .appointment .datepicker,
   .appointment select {
     margin-top: 0.2em; }
+
+.barber-bg {
+  background-repeat: no-repeat;
+  background-position: 60%;
+  padding-top: 22em;
+  max-width: 360px;
+  margin: 0 auto 1em; }
+
+.barber-dg {
+  background-image: url(../img/barber-dg.jpg); }
+
+.barber-dc {
+  background-image: url(../img/barber-dc.jpg); }
+
+.barber-ro {
+  background-image: url(../img/barber-ro.jpg); }
+
+.barber-wrapper {
+  padding: 1em 1em;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.6)), color-stop(60%, white));
+  background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.6), white 60%);
+  background-image: -o-linear-gradient(rgba(255, 255, 255, 0.6), white 60%);
+  background-image: linear-gradient(rgba(255, 255, 255, 0.6), white 60%); }
+  .barber-wrapper * {
+    margin-bottom: 0.5em; }
+
+.barber-name {
+  font-size: 2.4rem;
+  font-weight: bold;
+  font-family: "Quattrocento"; }
+
+.barber-rating {
+  color: #995437; }
+
+.barber-info {
+  font-size: 1.8rem;
+  margin-bottom: 0; }
