@@ -1,5 +1,5 @@
 .section-intro
-	margin: 0 auto 5em auto
+	margin: 0 auto 4em auto
 	.intro-text
 		max-width: 30em
 		margin: 1em auto 0
@@ -76,8 +76,10 @@
 .numbers
 	padding: 2.2em 0 1.2em 0
 	background-color: #151515
-	background-image: linear-gradient(rgba(0, 0, 0, 0.88), rgba(0, 0, 0, 0.88)), url(../img/numbers-bg.jpg)
+	background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url(../img/numbers-bg.jpg)
 	text-transform: uppercase
+	@media screen and (max-width: 991px)
+		display: none
 .numbers-count
 	font-family: $font-secondary
 	font-size: 6rem
@@ -87,8 +89,6 @@
 .numbers-text
 	color: #fff
 	font-size: 2rem
-	@media screen and (max-width: 767px)
-		margin-bottom: 1em
 
 
 // ----------------------------
@@ -108,13 +108,20 @@
 	text-align: left
 	@media screen and (min-width: 1600px)
 		margin: 0 10em
-
+.service-text
+	@media screen and (max-width: 992px)
+		h4
+			display: inline-block
+			margin: 0
+			margin-top: 0.8em
+			padding: 0
+			border-bottom: 1px dotted $color-accent
 @media screen and (min-width: 992px)
 	[class^="service-item"]
 		display: flex
 		justify-content: flex-end
-		.service-text
-			max-width: 25em
+	.service-text
+		max-width: 25em
 	.service-item-right
 		text-align: right
 		justify-content: flex-start
@@ -299,6 +306,11 @@ footer
 	margin-bottom: 2em
 	text-align: left
 .footer-item-title
+	@media screen and (max-width: 991px)
+		margin-top: 1em
+		margin-bottom: 0.8em
+		border-bottom: 1px solid $color-accent
+.footer-item-title
 	font-size: 2rem
 	font-family: $font-secondary
 	font-weight: bold
@@ -327,7 +339,7 @@ a.footer-blog-title
 	font-size: 1.8rem
 	color: $color-accent
 	&:hover
-		color: #d69b82
+		color: #ac5e3e
 .insta-img 
 	display: inline-block
 	margin-right: 0.5em
@@ -352,13 +364,20 @@ a.footer-blog-title
 .copyright
 	font-size: 1.8rem
 	line-height: 40px
+	@media screen and (max-width: 464px)
+		line-height: 20px
+		margin-top: 1em
 .social-icons
 	// margin-top: 1em
-.social-icon
+a.social-icon
 	display: inline-block
 	margin-right: 0.4em
 	width: 40px
 	height: 40px
+	color: #fff
 	border: 1px solid #fff
 	font-size: 2rem
 	line-height: 40px
+	&:hover
+		color: $color-accent
+		border-color: $color-accent
