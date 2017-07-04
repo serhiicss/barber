@@ -3560,6 +3560,10 @@ h2 {
   font-size: calc(3.6rem + 1vw);
   text-transform: uppercase;
   font-weight: bold; }
+  @media screen and (max-width: 510px) {
+    h2 {
+      margin-top: 0.4em;
+      margin-bottom: 0.8em; } }
 
 /* When an h2 is directly after an h1 */
 h1 + h2 {
@@ -3829,10 +3833,6 @@ h1.cta-slogan {
 .numbers {
   padding: 2.2em 0 1.2em 0;
   background-color: #151515;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.85)), to(rgba(0, 0, 0, 0.85))), url(../img/numbers-bg.jpg);
-  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url(../img/numbers-bg.jpg);
-  background-image: -o-linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url(../img/numbers-bg.jpg);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url(../img/numbers-bg.jpg);
   text-transform: uppercase; }
   @media screen and (max-width: 991px) {
     .numbers {
@@ -4137,7 +4137,8 @@ a.footer-blog-title {
   font-size: 1.8rem;
   color: #995437; }
   a.footer-blog-title:hover {
-    color: #ac5e3e; }
+    color: #ac5e3e;
+    text-decoration: underline; }
 
 .insta-img {
   display: inline-block;
