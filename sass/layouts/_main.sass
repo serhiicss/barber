@@ -1,289 +1,364 @@
 .section-intro
-  margin: 0 auto 5em auto
-  .intro-text
-    max-width: 30em
-    margin: 1em auto 0
-    font-size: 2rem
-    padding: 0 0.5em
+	margin: 0 auto 5em auto
+	.intro-text
+		max-width: 30em
+		margin: 1em auto 0
+		font-size: 2rem
+		padding: 0 0.5em
 
 .section-invert
-  background-color: #151515
-  background-size: fit
-  color: $color-invert
-  h2
-    color: #fff
+	background-color: #151515
+	background-size: fit
+	color: $color-invert
+	h2
+		color: #fff
 
 .mustache
-  position: relative
-  display: block
-  margin: 5px auto 0
-  width: 68px
-  height: 18px
-  background-image: url(../img/mustache.png)
-  background-repeat: no-repeat
-  &::before,
-  &::after
-    content: ''
-    position: absolute
-    display: inline-block
-    height: 1px
-    width: 90px
-    background-color: $color-accent
-    top: 12px
-  &::before
-    margin-left: -150px
-  &::after
-    margin-left: 60px
+	position: relative
+	display: block
+	margin: 5px auto 0
+	width: 68px
+	height: 18px
+	background-image: url(../img/mustache.png)
+	background-repeat: no-repeat
+	&::before,
+	&::after
+		content: ''
+		position: absolute
+		display: inline-block
+		height: 1px
+		width: 90px
+		background-color: $color-accent
+		top: 12px
+	&::before
+		margin-left: -150px
+	&::after
+		margin-left: 60px
 
 // ----------------------------
 // About us
 // ----------------------------
 .info-wrapper
-  margin-top: 6em
-  @media screen and (min-width: 550px)
-    margin-top: 8em
+	margin-top: 6em
+	@media screen and (min-width: 550px)
+		margin-top: 8em
 .info-item-box
-  position: relative
-  margin-bottom: 0.1em
-  padding: 4em 1.2em
-  background-color: #d5d3d3
-  text-align: center
-  [class^="info-icon"]
-    position: absolute
-    margin: 0 auto
-    top: -50px
-    left: 0
-    right: 0
-    display: inline-block
-    height: 102px
-    width: 102px
-  .info-icon-1
-    background-image: url(../img/info-1.png)
-  .info-icon-2
-    background-image: url(../img/info-2.png)
-  .info-icon-3
-    background-image: url(../img/info-3.png)
-  .divider
-    display: inline-block
-    height: 2px
-    width: 8em
-    background-color: $color-accent
+	position: relative
+	margin-bottom: 0.1em
+	padding: 4em 1.2em
+	background-color: #d5d3d3
+	text-align: center
+	[class^="info-icon"]
+		position: absolute
+		margin: 0 auto
+		top: -50px
+		left: 0
+		right: 0
+		display: inline-block
+		height: 102px
+		width: 102px
+	.info-icon-1
+		background-image: url(../img/info-1.png)
+	.info-icon-2
+		background-image: url(../img/info-2.png)
+	.info-icon-3
+		background-image: url(../img/info-3.png)
+	.divider
+		display: inline-block
+		height: 2px
+		width: 8em
+		background-color: $color-accent
 
 
 // ----------------------------
 // Numbers
 // ----------------------------
 .numbers
-  padding: 2.2em 0 1.2em 0
-  background-color: #151515
-  background-image: linear-gradient(rgba(0, 0, 0, 0.88), rgba(0, 0, 0, 0.88)), url(../img/numbers-bg.jpg)
-  text-transform: uppercase
+	padding: 2.2em 0 1.2em 0
+	background-color: #151515
+	background-image: linear-gradient(rgba(0, 0, 0, 0.88), rgba(0, 0, 0, 0.88)), url(../img/numbers-bg.jpg)
+	text-transform: uppercase
 .numbers-count
-  font-family: $font-secondary
-  font-size: 6rem
-  line-height: 1.1
-  font-weight: bold
-  color: $color-accent
+	font-family: $font-secondary
+	font-size: 6rem
+	line-height: 1.1
+	font-weight: bold
+	color: $color-accent
 .numbers-text
-  color: #fff
-  font-size: 2rem
-  @media screen and (max-width: 767px)
-    margin-bottom: 1em
+	color: #fff
+	font-size: 2rem
+	@media screen and (max-width: 767px)
+		margin-bottom: 1em
 
 
 // ----------------------------
 // Our Services
 // ----------------------------
 .our-services
-  @media screen and (min-width: 1200px)
-    background-color: orange
-    background: url(../img/our-services-bg-man.png) bottom no-repeat, url(../img/our-services-bg.jpg) no-repeat
-    background-size: 400px, cover
-    background-position: 52% 100%, center
-  @media screen and (min-width: 1360px)
-    background-size: 660px, cover
-    padding-bottom: 30em
+	@media screen and (min-width: 1200px)
+		background-color: orange
+		background: url(../img/our-services-bg-man.png) bottom no-repeat, url(../img/our-services-bg.jpg) no-repeat
+		background-size: 400px, cover
+		background-position: 52% 100%, center
+	@media screen and (min-width: 1360px)
+		background-size: 660px, cover
+		padding-bottom: 30em
 
 .our-services-wrapper
-  text-align: left
-  @media screen and (min-width: 1600px)
-    margin: 0 10em
+	text-align: left
+	@media screen and (min-width: 1600px)
+		margin: 0 10em
 
 @media screen and (min-width: 992px)
-  [class^="service-item"]
-    display: flex
-    justify-content: flex-end
-    .service-text
-      max-width: 25em
-  .service-item-right
-    text-align: right
-    justify-content: flex-start
-    [class^="service-icon"]
-      order: 2
-      margin-right: 0
-      margin-left: 1em
-  [class^="service-icon"]
-    align-self: center
-    width: 90px
-    height: 90px
-    margin-right: 1em
-  .service-icon
-    &-1
-      background-image: url(../img/service-1.png)
-    &-2
-      background-image: url(../img/service-2.png)
-    &-3
-      background-image: url(../img/service-3.png)
-    &-4
-      background-image: url(../img/service-4.png)
+	[class^="service-item"]
+		display: flex
+		justify-content: flex-end
+		.service-text
+			max-width: 25em
+	.service-item-right
+		text-align: right
+		justify-content: flex-start
+		[class^="service-icon"]
+			order: 2
+			margin-right: 0
+			margin-left: 1em
+	[class^="service-icon"]
+		align-self: center
+		width: 90px
+		height: 90px
+		margin-right: 1em
+	.service-icon
+		&-1
+			background-image: url(../img/service-1.png)
+		&-2
+			background-image: url(../img/service-2.png)
+		&-3
+			background-image: url(../img/service-3.png)
+		&-4
+			background-image: url(../img/service-4.png)
 
 // ----------------------------
 // Appointment
 // ----------------------------   
 .appointment
-  background-image: linear-gradient(rgba(0, 0, 0, 0.9) 70%, rgba(0, 0, 0, 0.65)), url(../img/form-bg.jpg)
-  input,
-  select,
-  textarea
-    width: 100%
-    margin-bottom: 2em
-    font-size: calc(2rem + 0.1vw)
-    color: $color-form
-    background-color: transparent
-    border: 0
-    border-bottom: 1px solid $color-invert
-  textarea:focus,
-  input:focus,
-  select
-    outline: 0
-    cursor: pointer
-  option
-    background-color: #000
-  textarea
-    height: 6em
-  .datepicker,
-  select
-    margin-top: 0.2em
+	background-image: linear-gradient(rgba(0, 0, 0, 0.9) 70%, rgba(0, 0, 0, 0.65)), url(../img/form-bg.jpg)
+	input,
+	select,
+	textarea
+		width: 100%
+		margin-bottom: 2em
+		font-size: calc(2rem + 0.1vw)
+		color: $color-form
+		background-color: transparent
+		border: 0
+		border-bottom: 1px solid $color-invert
+	textarea:focus,
+	input:focus,
+	select
+		outline: 0
+		cursor: pointer
+	option
+		background-color: #000
+	textarea
+		height: 6em
+	.datepicker,
+	select
+		margin-top: 0.2em
 
 
 // ----------------------------
 // Our Barbers
 // ----------------------------
 .barber-bg
-  background-repeat: no-repeat
-  background-position: 60%
-  padding-top: 22em
-  max-width: 360px
-  margin: 0 auto 1em
+	background-repeat: no-repeat
+	background-position: 60%
+	padding-top: 22em
+	max-width: 360px
+	margin: 0 auto 1em
 .barber
-  &-dg
-    background-image: url(../img/barber-dg.jpg)
-  &-dc
-    background-image: url(../img/barber-dc.jpg)
-  &-ro
-    background-image: url(../img/barber-ro.jpg)
+	&-dg
+		background-image: url(../img/barber-dg.jpg)
+	&-dc
+		background-image: url(../img/barber-dc.jpg)
+	&-ro
+		background-image: url(../img/barber-ro.jpg)
 .barber-wrapper
-  padding: 1em 1em
-  background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 1)60%)
-  & *
-    margin-bottom: 0.5em
+	padding: 1em 1em
+	background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 1)60%)
+	& *
+		margin-bottom: 0.5em
 .barber-name
-  font-size: 2.4rem
-  font-weight: bold
-  font-family: $font-secondary
+	font-size: 2.4rem
+	font-weight: bold
+	font-family: $font-secondary
 .barber-rating
-  color: $color-accent
+	color: $color-accent
 .barber-info
-  font-size: 1.8rem
-  margin-bottom: 0
+	font-size: 1.8rem
+	margin-bottom: 0
 
 
 // ----------------------------
 // Reviews
 // ----------------------------
 .reviews
-  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/reviews-bg.jpg)
-  background-size: cover
-  &::before
-    conent:
+	background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/reviews-bg.jpg)
+	background-size: cover
 .reviews-slider
-  margin: 0 auto
-  width: 100%
-  max-width: 60em
-  cursor: pointer
+	margin: 0 auto
+	width: 100%
+	max-width: 60em
+	cursor: pointer
 .slide-wrapper
-  outline: none
-  padding: 0 1em
-  & > *:not(:last-child)
-    margin-bottom: 1em
+	outline: none
+	padding: 0 1em
+	& > *:not(:last-child)
+		margin-bottom: 1em
 .review-rating
-  color: $color-accent
+	color: $color-accent
 .review-text
-  font-size: 1.8rem
+	font-size: 1.8rem
 img.review-avatar
-  display: inline-block
+	display: inline-block
 .review-author
-  font-size: 2rem
-  font-family: $font-secondary
-  color: $color-accent
+	font-size: 2rem
+	font-family: $font-secondary
+	color: $color-accent
 ul.slick-dots
-  padding: 0
+	padding: 0
 ul.slick-dots li
-  display: inline-block
+	display: inline-block
 ul.slick-dots button
-  width: 12px
-  height: 12px
-  margin: 0 8px
-  font-size: 0
-  background-color: $color-accent
-  border: none
-  border-radius: 50%
-  outline: none
+	width: 12px
+	height: 12px
+	margin: 0 8px
+	font-size: 0
+	background-color: $color-accent
+	border: none
+	border-radius: 50%
+	outline: none
 
 // ----------------------------
 // Our Gallery
 // ----------------------------
+.gallery
+	padding-bottom: 0
 .gallery-wrapper
-  img
-    filter: grayscale(90%)
+	img
+		filter: grayscale(90%)
 
 
 // ----------------------------
 // Prices
 // ----------------------------
 .price-block
-  margin-bottom: 20px
-  font-size: 1.8rem
-  border-left: 1px solid #d2d2d2
-  border-right: 1px solid #d2d2d2
+	margin-bottom: 20px
+	font-size: 1.8rem
+	border-left: 1px solid #d2d2d2
+	border-right: 1px solid #d2d2d2
 .price-title
-  padding: 0.8em 0
-  color: #fff
-  background-color: #303030
-  font-size: 2.4rem
-  font-family: $font-secondary
-  &.boys
-    background-color: $color-accent
+	padding: 0.8em 0
+	color: #fff
+	background-color: #303030
+	font-size: 2.4rem
+	font-family: $font-secondary
+	&.boys
+		background-color: $color-accent
 .price-body
-  margin: 1.5em 0.5em
+	margin: 1.5em 0.5em
 .service-title
-  text-align: left
-  padding: 0.3em 0 0
-  margin-bottom: 0.3em
-  border-bottom: 1px dotted #d2d2d2
-  span
-    float: right
-    text-align: right
+	text-align: left
+	padding: 0.3em 0 0
+	margin-bottom: 0.3em
+	border-bottom: 1px dotted #d2d2d2
+	span
+		float: right
+		text-align: right
 .btn-price-men,
 .btn-price-boys
-  width: 100%
-  padding: 0.6em 0
+	width: 100%
+	padding: 0.6em 0
 .btn-price-men   
-  background-color: #303030
-  border-color: #303030
+	background-color: #303030
+	border-color: #303030
 .btn-price-boys
-  background-color: $color-accent
-  &:hover
-    background-color: #303030
-    border-color: #303030
+	background-color: $color-accent
+	&:hover
+		background-color: #303030
+		border-color: #303030
 
+
+// ----------------------------
+// Footer
+// ----------------------------
+footer
+	background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url(../img/footer-bg.jpg)
+	background-size: cover
+	padding-bottom: 0
+.footer-item > *
+	margin-bottom: 2em
+	text-align: left
+.footer-item-title
+	font-size: 2rem
+	font-family: $font-secondary
+	font-weight: bold
+	color: $color-accent
+	text-transform: uppercase
+.footer-item-body
+	font-size: 1.8rem
+input.sub-email
+	padding: 0.8em 1.8em
+	border: none
+.submit-email
+	margin-left: -4px
+	padding: 0.8em 1em
+	background-color: $color-accent
+	border: none
+.working-hours
+	list-style-type: none
+	padding-left: 0
+	span
+		float: right
+	li:not(:last-child)
+		margin-bottom: 0.5em
+a.footer-blog-title
+	display: block
+	margin-bottom: 0.5em
+	font-size: 1.8rem
+	color: $color-accent
+	&:hover
+		color: #d69b82
+.insta-img 
+	display: inline-block
+	margin-right: 0.5em
+	width: 67px 
+	height: 67px
+	background: url('../img/instagram-gallery.png') no-repeat top left
+.insta-img-1
+	background-position: 0 0
+.insta-img-2
+	background-position: 0 -77px
+.insta-img-3
+	background-position: 0 -154px
+.insta-img-4
+	background-position: 0 -231px
+.insta-img-5
+	background-position: 0 -308px
+.insta-img-6
+	background-position: 0 -385px
+.sub-footer
+	background-color: #000
+	padding: 1.6em 0
+.copyright
+	font-size: 1.8rem
+	line-height: 40px
+.social-icons
+	// margin-top: 1em
+.social-icon
+	display: inline-block
+	margin-right: 0.4em
+	width: 40px
+	height: 40px
+	border: 1px solid #fff
+	font-size: 2rem
+	line-height: 40px

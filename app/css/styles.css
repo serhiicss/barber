@@ -3504,20 +3504,24 @@ img {
   text-align: right; }
 
 header,
-section {
+section,
+footer {
   max-width: 1920px;
   margin: 0 auto; }
 
-section {
+section,
+footer {
   padding-top: 8em;
   padding-bottom: 8em;
   text-align: center; }
   @media only screen and (max-width: 1599px) {
-    section {
+    section,
+    footer {
       padding-top: 5em;
       padding-bottom: 5em; } }
   @media only screen and (max-width: 425px) {
-    section {
+    section,
+    footer {
       padding-top: 3em;
       padding-bottom: 3em; } }
 
@@ -4018,6 +4022,9 @@ ul.slick-dots button {
           border-radius: 50%;
   outline: none; }
 
+.gallery {
+  padding-bottom: 0; }
+
 .gallery-wrapper img {
   -webkit-filter: grayscale(90%);
           filter: grayscale(90%); }
@@ -4063,3 +4070,94 @@ ul.slick-dots button {
   .btn-price-boys:hover {
     background-color: #303030;
     border-color: #303030; }
+
+footer {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.85)), to(rgba(0, 0, 0, 0.85))), url(../img/footer-bg.jpg);
+  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url(../img/footer-bg.jpg);
+  background-image: -o-linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url(../img/footer-bg.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url(../img/footer-bg.jpg);
+  -webkit-background-size: cover;
+          background-size: cover;
+  padding-bottom: 0; }
+
+.footer-item > * {
+  margin-bottom: 2em;
+  text-align: left; }
+
+.footer-item-title {
+  font-size: 2rem;
+  font-family: "Quattrocento";
+  font-weight: bold;
+  color: #995437;
+  text-transform: uppercase; }
+
+.footer-item-body {
+  font-size: 1.8rem; }
+
+input.sub-email {
+  padding: 0.8em 1.8em;
+  border: none; }
+
+.submit-email {
+  margin-left: -4px;
+  padding: 0.8em 1em;
+  background-color: #995437;
+  border: none; }
+
+.working-hours {
+  list-style-type: none;
+  padding-left: 0; }
+  .working-hours span {
+    float: right; }
+  .working-hours li:not(:last-child) {
+    margin-bottom: 0.5em; }
+
+a.footer-blog-title {
+  display: block;
+  margin-bottom: 0.5em;
+  font-size: 1.8rem;
+  color: #995437; }
+  a.footer-blog-title:hover {
+    color: #d69b82; }
+
+.insta-img {
+  display: inline-block;
+  margin-right: 0.5em;
+  width: 67px;
+  height: 67px;
+  background: url("../img/instagram-gallery.png") no-repeat top left; }
+
+.insta-img-1 {
+  background-position: 0 0; }
+
+.insta-img-2 {
+  background-position: 0 -77px; }
+
+.insta-img-3 {
+  background-position: 0 -154px; }
+
+.insta-img-4 {
+  background-position: 0 -231px; }
+
+.insta-img-5 {
+  background-position: 0 -308px; }
+
+.insta-img-6 {
+  background-position: 0 -385px; }
+
+.sub-footer {
+  background-color: #000;
+  padding: 1.6em 0; }
+
+.copyright {
+  font-size: 1.8rem;
+  line-height: 40px; }
+
+.social-icon {
+  display: inline-block;
+  margin-right: 0.4em;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #fff;
+  font-size: 2rem;
+  line-height: 40px; }
