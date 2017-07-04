@@ -4021,3 +4021,45 @@ ul.slick-dots button {
 .gallery-wrapper img {
   -webkit-filter: grayscale(90%);
           filter: grayscale(90%); }
+
+.price-block {
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  border-left: 1px solid #d2d2d2;
+  border-right: 1px solid #d2d2d2; }
+
+.price-title {
+  padding: 0.8em 0;
+  color: #fff;
+  background-color: #303030;
+  font-size: 2.4rem;
+  font-family: "Quattrocento"; }
+  .price-title.boys {
+    background-color: #995437; }
+
+.price-body {
+  margin: 1.5em 0.5em; }
+
+.service-title {
+  text-align: left;
+  padding: 0.3em 0 0;
+  margin-bottom: 0.3em;
+  border-bottom: 1px dotted #d2d2d2; }
+  .service-title span {
+    float: right;
+    text-align: right; }
+
+.btn-price-men,
+.btn-price-boys {
+  width: 100%;
+  padding: 0.6em 0; }
+
+.btn-price-men {
+  background-color: #303030;
+  border-color: #303030; }
+
+.btn-price-boys {
+  background-color: #995437; }
+  .btn-price-boys:hover {
+    background-color: #303030;
+    border-color: #303030; }
