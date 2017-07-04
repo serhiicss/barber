@@ -3755,6 +3755,14 @@ h1.cta-slogan {
     font-size: 2rem;
     padding: 0 0.5em; }
 
+.section-invert {
+  background-color: #151515;
+  -webkit-background-size: fit fit;
+          background-size: fit;
+  color: #c0c0c0; }
+  .section-invert h2 {
+    color: #fff; }
+
 .mustache {
   position: relative;
   display: block;
@@ -3894,16 +3902,10 @@ h1.cta-slogan {
     background-image: url(../img/service-4.png); } }
 
 .appointment {
-  background-color: #151515;
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(70%, rgba(0, 0, 0, 0.9)), to(rgba(0, 0, 0, 0.65))), url(../img/form-bg.jpg);
   background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.9) 70%, rgba(0, 0, 0, 0.65)), url(../img/form-bg.jpg);
   background-image: -o-linear-gradient(rgba(0, 0, 0, 0.9) 70%, rgba(0, 0, 0, 0.65)), url(../img/form-bg.jpg);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.9) 70%, rgba(0, 0, 0, 0.65)), url(../img/form-bg.jpg);
-  -webkit-background-size: fit fit;
-          background-size: fit;
-  color: #c0c0c0; }
-  .appointment h2 {
-    color: #fff; }
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9) 70%, rgba(0, 0, 0, 0.65)), url(../img/form-bg.jpg); }
   .appointment input,
   .appointment select,
   .appointment textarea {
@@ -3964,3 +3966,54 @@ h1.cta-slogan {
 .barber-info {
   font-size: 1.8rem;
   margin-bottom: 0; }
+
+.reviews {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.8))), url(../img/reviews-bg.jpg);
+  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/reviews-bg.jpg);
+  background-image: -o-linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/reviews-bg.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/reviews-bg.jpg);
+  -webkit-background-size: cover;
+          background-size: cover; }
+
+.reviews-slider {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 60em;
+  cursor: pointer; }
+
+.slide-wrapper {
+  outline: none;
+  padding: 0 1em; }
+  .slide-wrapper > *:not(:last-child) {
+    margin-bottom: 1em; }
+
+.review-rating {
+  color: #995437; }
+
+.review-text {
+  font-size: 1.8rem; }
+
+img.review-avatar {
+  display: inline-block; }
+
+.review-author {
+  font-size: 2rem;
+  font-family: "Quattrocento";
+  color: #995437; }
+
+ul.slick-dots {
+  padding: 0; }
+
+ul.slick-dots li {
+  display: inline-block; }
+
+ul.slick-dots button {
+  width: 12px;
+  height: 12px;
+  margin: 0 8px;
+  font-size: 0;
+  background-color: #995437;
+  border: none;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  outline: none; }
