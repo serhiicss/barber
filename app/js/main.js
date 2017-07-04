@@ -19,6 +19,9 @@
 		}n?o===-1&&(o=setTimeout(function(){s(a),o=-1},r._throttle)):s(a)},t(r._applyDataApi);var h=t.fn.on?"on":"bind";t(window)[h]("load",function(t){r._update(!1,t)}),t(window)[h]("resize orientationchange",function(t){r._update(!0,t)})});
 
 
+
+
+
 $(document).ready(function() {
 	$(".hamburger").on("click", function(){
 		$(".hamburger").toggleClass("is-active");
@@ -31,11 +34,16 @@ $(document).ready(function() {
 
 	$('.reviews-slider').slick({
 		infinite: true,
-		autoplay: true,
+		// autoplay: true,
 		autoplaySpeed: 10000,
 		arrows: false,
 		pauseOnHover: true,
 		dots: true
+	});
+
+	$("#gallery").unitegallery({
+		tiles_justified_space_between:0,
+		tiles_type:"justified"
 	});
 
 });

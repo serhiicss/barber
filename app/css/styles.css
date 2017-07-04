@@ -4017,3 +4017,7 @@ ul.slick-dots button {
   -webkit-border-radius: 50%;
           border-radius: 50%;
   outline: none; }
+
+.gallery-wrapper img {
+  -webkit-filter: grayscale(90%);
+          filter: grayscale(90%); }
