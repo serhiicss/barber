@@ -3504,22 +3504,31 @@ img {
   text-align: right; }
 
 header,
-section {
+section,
+footer {
   max-width: 1920px;
   margin: 0 auto; }
 
-section {
+section,
+footer {
   padding-top: 8em;
   padding-bottom: 8em;
   text-align: center; }
   @media only screen and (max-width: 1599px) {
-    section {
+    section,
+    footer {
       padding-top: 5em;
       padding-bottom: 5em; } }
-  @media only screen and (max-width: 425px) {
-    section {
+  @media only screen and (max-width: 991px) {
+    section,
+    footer {
       padding-top: 3em;
       padding-bottom: 3em; } }
+  @media only screen and (max-width: 425px) {
+    section,
+    footer {
+      padding-top: 1.5em;
+      padding-bottom: 1.5em; } }
 
 html {
   font-size: 62.5%;
@@ -3551,6 +3560,10 @@ h2 {
   font-size: calc(3.6rem + 1vw);
   text-transform: uppercase;
   font-weight: bold; }
+  @media screen and (max-width: 510px) {
+    h2 {
+      margin-top: 0.4em;
+      margin-bottom: 0.8em; } }
 
 /* When an h2 is directly after an h1 */
 h1 + h2 {
@@ -3748,7 +3761,7 @@ h1.cta-slogan {
     color: #995437; }
 
 .section-intro {
-  margin: 0 auto 5em auto; }
+  margin: 0 auto 4em auto; }
   .section-intro .intro-text {
     max-width: 30em;
     margin: 1em auto 0;
@@ -3820,11 +3833,10 @@ h1.cta-slogan {
 .numbers {
   padding: 2.2em 0 1.2em 0;
   background-color: #151515;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.88)), to(rgba(0, 0, 0, 0.88))), url(../img/numbers-bg.jpg);
-  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.88), rgba(0, 0, 0, 0.88)), url(../img/numbers-bg.jpg);
-  background-image: -o-linear-gradient(rgba(0, 0, 0, 0.88), rgba(0, 0, 0, 0.88)), url(../img/numbers-bg.jpg);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.88), rgba(0, 0, 0, 0.88)), url(../img/numbers-bg.jpg);
   text-transform: uppercase; }
+  @media screen and (max-width: 991px) {
+    .numbers {
+      display: none; } }
 
 .numbers-count {
   font-family: "Quattrocento";
@@ -3836,9 +3848,6 @@ h1.cta-slogan {
 .numbers-text {
   color: #fff;
   font-size: 2rem; }
-  @media screen and (max-width: 767px) {
-    .numbers-text {
-      margin-bottom: 1em; } }
 
 @media screen and (min-width: 1200px) {
   .our-services {
@@ -3860,6 +3869,14 @@ h1.cta-slogan {
     .our-services-wrapper {
       margin: 0 10em; } }
 
+@media screen and (max-width: 992px) {
+  .service-text h4 {
+    display: inline-block;
+    margin: 0;
+    margin-top: 0.8em;
+    padding: 0;
+    border-bottom: 1px dotted #995437; } }
+
 @media screen and (min-width: 992px) {
   [class^="service-item"] {
     display: -webkit-box;
@@ -3870,8 +3887,8 @@ h1.cta-slogan {
     -webkit-justify-content: flex-end;
         -ms-flex-pack: end;
             justify-content: flex-end; }
-    [class^="service-item"] .service-text {
-      max-width: 25em; }
+  .service-text {
+    max-width: 25em; }
   .service-item-right {
     text-align: right;
     -webkit-box-pack: start;
@@ -4018,6 +4035,9 @@ ul.slick-dots button {
           border-radius: 50%;
   outline: none; }
 
+.gallery {
+  padding-bottom: 0; }
+
 .gallery-wrapper img {
   -webkit-filter: grayscale(90%);
           filter: grayscale(90%); }
@@ -4063,3 +4083,109 @@ ul.slick-dots button {
   .btn-price-boys:hover {
     background-color: #303030;
     border-color: #303030; }
+
+footer {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.85)), to(rgba(0, 0, 0, 0.85))), url(../img/footer-bg.jpg);
+  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url(../img/footer-bg.jpg);
+  background-image: -o-linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url(../img/footer-bg.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url(../img/footer-bg.jpg);
+  -webkit-background-size: cover;
+          background-size: cover;
+  padding-bottom: 0; }
+
+.footer-item > * {
+  margin-bottom: 2em;
+  text-align: left; }
+
+@media screen and (max-width: 991px) {
+  .footer-item-title {
+    margin-top: 1em;
+    margin-bottom: 0.8em;
+    border-bottom: 1px solid #995437; } }
+
+.footer-item-title {
+  font-size: 2rem;
+  font-family: "Quattrocento";
+  font-weight: bold;
+  color: #995437;
+  text-transform: uppercase; }
+
+.footer-item-body {
+  font-size: 1.8rem; }
+
+input.sub-email {
+  padding: 0.8em 1.8em;
+  border: none; }
+
+.submit-email {
+  margin-left: -4px;
+  padding: 0.8em 1em;
+  background-color: #995437;
+  border: none; }
+
+.working-hours {
+  list-style-type: none;
+  padding-left: 0; }
+  .working-hours span {
+    float: right; }
+  .working-hours li:not(:last-child) {
+    margin-bottom: 0.5em; }
+
+a.footer-blog-title {
+  display: block;
+  margin-bottom: 0.5em;
+  font-size: 1.8rem;
+  color: #995437; }
+  a.footer-blog-title:hover {
+    color: #ac5e3e;
+    text-decoration: underline; }
+
+.insta-img {
+  display: inline-block;
+  margin-right: 0.5em;
+  width: 67px;
+  height: 67px;
+  background: url("../img/instagram-gallery.png") no-repeat top left; }
+
+.insta-img-1 {
+  background-position: 0 0; }
+
+.insta-img-2 {
+  background-position: 0 -77px; }
+
+.insta-img-3 {
+  background-position: 0 -154px; }
+
+.insta-img-4 {
+  background-position: 0 -231px; }
+
+.insta-img-5 {
+  background-position: 0 -308px; }
+
+.insta-img-6 {
+  background-position: 0 -385px; }
+
+.sub-footer {
+  background-color: #000;
+  padding: 1.6em 0; }
+
+.copyright {
+  font-size: 1.8rem;
+  line-height: 40px; }
+  @media screen and (max-width: 464px) {
+    .copyright {
+      line-height: 20px;
+      margin-top: 1em; } }
+
+a.social-icon {
+  display: inline-block;
+  margin-right: 0.4em;
+  width: 40px;
+  height: 40px;
+  color: #fff;
+  border: 1px solid #fff;
+  font-size: 2rem;
+  line-height: 40px; }
+  a.social-icon:hover {
+    color: #995437;
+    border-color: #995437; }

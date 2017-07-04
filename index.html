@@ -8,7 +8,7 @@
 </head>
 <body>
 
-	<header class="top-header">
+	<header id="header" class="top-header">
 		<div class="top-header-info">
 			<div class="container">
 				<div class="row">
@@ -66,14 +66,14 @@
 			</button>
 			<nav id="header-nav" class="header-nav" role="navigation">
 				<ul>
-					<li><a href="#">Home</a></li>
-					<li><a href="#">About</a></li>
-					<li><a href="#">Services</a></li>
-					<li><a href="#">Barbers</a></li>
-					<li><a href="#">Testimonials</a></li>
-					<li><a href="#">Portfolio</a></li>
-					<li><a href="#">Prices</a></li>
-					<li><a href="#">Contacts</a></li>
+					<li><a href="#header">Home</a></li>
+					<li><a href="#about-us">About</a></li>
+					<li><a href="#our-services">Services</a></li>
+					<li><a href="#our-barbers">Barbers</a></li>
+					<li><a href="#reviews">Testimonials</a></li>
+					<li><a href="#our-gallery">Gallery</a></li>
+					<li><a href="#prices">Prices</a></li>
+					<li><a href="#contact">Contacts</a></li>
 				</ul>
 			</nav>
 
@@ -86,7 +86,7 @@
 	</header>
 
 
-	<section class="about-us">
+	<section id="about-us" class="about-us">
 
 		<div class="section-intro">
 			<h2>About us</h2>
@@ -162,7 +162,7 @@
 	</section><!-- numbers -->
 
 
-	<section class="our-services">
+	<section id="our-services" class="our-services">
 
 		<div class="section-intro">
 
@@ -222,7 +222,7 @@
 	</section><!-- our-services -->
 
 
-	<section class="appointment section-invert">
+	<section id="contact" class="appointment section-invert">
 
 		<div class="section-intro">
 			<h2>Make an appointment</h2>
@@ -277,7 +277,7 @@
 	</section><!-- appointment -->
 
 
-	<section class="our-barbers">
+	<section id="our-barbers" class="our-barbers">
 
 		<div class="section-intro">
 
@@ -344,7 +344,7 @@
 		
 	</section><!-- our-barbers -->
 
-	<section class="reviews section-invert">
+	<section id="reviews" class="reviews section-invert">
 
 		<div class="section-intro">
 			<h2>What our clients says</h2>
@@ -409,7 +409,7 @@
 
 	</section><!-- reviews -->
 
-	<section class="gallery">
+	<section id="our-gallery" class="gallery">
 
 		<div class="section-intro">
 
@@ -446,9 +446,9 @@
 
 		</div><!-- gallery-wrapper -->
 		
-	</section>
+	</section><!-- gallery -->
 
-	<section class="pricing">
+	<section id="prices" class="pricing">
 		
 		<div class="section-intro">
 
@@ -490,31 +490,115 @@
 						</div>
 					</div>						
 
+				</div>
+
+			</div><!-- row -->
+		</div><!-- container -->
+	</div><!-- pricing-wrap -->
+
+</section><!-- pricing -->
+
+<footer class="section-invert">
+	<div class="footer-wrapper">
+		<div class="container">
+			<div class="row">
+
+				<div class="col-md-3">
+					<div class="footer-item">
+						<div class="footer-item-title">Subscribe</div>
+						<div class="footer-item-body">We will only send you our promotions. No spam!</div>
+						<input id="sub-email" class="sub-email" type="email" placeholder="Your E-mail">
+						<a href="#" class="button submit-email"><i class="fa fa-paper-plane-o"></i></a>
 					</div>
+				</div>
+
+				<div class="col-md-3">
+					<div class="footer-item">
+						<div class="footer-item-title">Business Hours</div>
+						<div class="footer-item-body">
+							<ul class="working-hours">
+								<li>MON<span>9pm-6pm</span></li>
+								<li>TUE<span>9pm-6pm</span></li>
+								<li>WED<span>9pm-6pm</span></li>
+								<li>THU<span>9pm-6pm</span></li>
+								<li>FRI<span>9pm-6pm</span></li>
+								<li>SAT<span>9pm-2pm</span></li>
+								<li>SUN<span>Closed</span></li>
+							</ul>
+						</div>
+					</div>					
+				</div>
+
+				<div class="col-md-3">
+					<div class="footer-item">
+						<div class="footer-item-title">From Our Blog</div>
+						<a href="#" class="footer-blog-title">What's in style</a>
+						<div class="footer-blog-text">Read what is in style now. What haricust are in fashion.</div>
+						<a href="#" class="footer-blog-title">Your hair is your hair</a>
+						<div class="footer-blog-text">How to take care of your hair. What are the best hair products for money and more.</div>
+					</div>					
+				</div>
+
+				<div class="col-md-3">
+					<div class="footer-item">
+						<div class="footer-item-title">Instagram</div>
+						<div class="instagram-gallery">
+							<a href="#" class='insta-img insta-img-1'></a>
+							<a href="#" class='insta-img insta-img-2'></a>
+							<a href="#" class='insta-img insta-img-3'></a>
+							<a href="#" class='insta-img insta-img-4'></a>
+							<a href="#" class='insta-img insta-img-5'></a>
+							<a href="#" class='insta-img insta-img-6'></a>							
+						</div>
+					</div>					
+				</div>
+			</div><!-- row -->
+		</div><!-- container -->
+
+		<div class="sub-footer">
+			<div class="container">
+				<div class="row">
+
+					<div class="col-md-6">
+						<div class="social-icons">
+							<a href="#" class="social-icon"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+							<a href="#" class="social-icon"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+							<a href="#" class="social-icon"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+							<a href="#" class="social-icon"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+						</div>
+					</div>
+
+					<div class="col-md-6">
+						<div class="copyright">Design by Elena Ivanova. Code by Serhii Borovskyi, 2017</div>
+					</div>					
 
 				</div><!-- row -->
 			</div><!-- container -->
-		</div><!-- pricing-wrap -->
+		</div><!-- sub-footer -->
 
-	</section>
-
-	<!-- Assets -->
-
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
-	<link rel='stylesheet' href='unitegallery/css/unite-gallery.css' type='text/css' /> 
-	<link rel="stylesheet" href="css/styles.css">
+	</div><!-- footer-wrapper -->
+</footer>
 
 
-	<script
-	src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
-	integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
-	crossorigin="anonymous"></script>
-	<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
-	<script type='text/javascript' src='unitegallery/js/unitegallery.min.js'></script>
-	<script type='text/javascript' src='unitegallery/themes/tiles/ug-theme-tiles.js'></script> 
-	<script src="js/main.js"></script>
+
+
+<!-- Assets -->
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+<link rel='stylesheet' href='unitegallery/css/unite-gallery.css' type='text/css' /> 
+<link rel="stylesheet" href="css/styles.css">
+
+
+<script
+src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+crossorigin="anonymous"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+<script type='text/javascript' src='unitegallery/js/unitegallery.min.js'></script>
+<script type='text/javascript' src='unitegallery/themes/tiles/ug-theme-tiles.js'></script> 
+<script src="js/main.js"></script>
 
 </body>
 </html>
