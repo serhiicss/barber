@@ -29,6 +29,7 @@ $(document).ready(function() {
 	})
 
 	$('.info-item-box').matchHeight();
+	$('.price-body').matchHeight();
 
 	$( "#datepicker" ).datepicker();
 
