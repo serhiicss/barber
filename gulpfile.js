@@ -2,6 +2,7 @@ var gulp           = require('gulp'),
 		sass           = require('gulp-sass'),
 		browserSync    = require('browser-sync'),
 		autoprefixer   = require('gulp-autoprefixer'),
+		cleanCSS       = require('gulp-clean-css'),
 		deploy         = require('gulp-gh-pages'),
 		notify         = require("gulp-notify");
 
@@ -19,7 +20,7 @@ gulp.task('sass', function() {
 	.pipe(sass({outputStyle: 'expand'}).on("error", notify.onError()))
 	//.pipe(rename({suffix: '.min', prefix : ''}))
 	.pipe(autoprefixer(['last 15 versions']))
-	//.pipe(cleanCSS())
+	.pipe(cleanCSS())
 	.pipe(gulp.dest('app/css'))
 	.pipe(browserSync.reload({stream: true}));
 });
